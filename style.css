@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section {
+    background: var(--light-bg);
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+}
+
+.hero-section h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.hero-section .btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.services-section .card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.services-section .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 微信浏览器优化 */
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
